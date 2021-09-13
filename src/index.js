@@ -23,7 +23,7 @@ env.config();
 
 //mongoose connect
 mongoose.connect(
-    `mongodb://${process.env.LOCALHOST}/${process.env.MONGO_DB_DATA}`,
+    `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.vf4rj.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
